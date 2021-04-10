@@ -56,4 +56,4 @@ def training(o1,o2,input,target_values,hypothesis,learning_rate,no_of_iterations
     cost_history.append(cost) 
     if (i%10==0):
        print "iter={:d}    o2={:.2f}    o1={:.4f}    cost={:.2}".format(i, o2, o1, cost)
-  return cost_history
+  return o1,o2,cost_history
