@@ -33,7 +33,7 @@ def cost_function(target_values,hypothesis):
   for in range(len(hypothesis)):
     value=(target_values[i]-hypothesis[i])**2
     total_error+=value
-  error=total_eroor/len(hypothesis)
+  error=total_error/len(hypothesis)
   return error
 
 #Gradient Descent
