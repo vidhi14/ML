@@ -51,7 +51,7 @@ def gradient_descent(o1,o2,input,target_values,hypothesis,learning_rate):
 def training(o1,o2,input,target_values,hypothesis,learning_rate,no_of_iterations): 
   cost_history=[]
   for i in range(no_of_iterations): 
-    o1,o2=gradient_descent(o1,o2,inpt,tagtet_values,hypothesis,learning_rate) 
+    o1,o2=gradient_descent(o1,o2,inpt,target_values,hypothesis,learning_rate) 
     cost=cost_function(target_values,hypothesis) 
     cost_history.append(cost) 
     if (i%10==0):
